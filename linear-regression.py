@@ -47,8 +47,7 @@ def run():
     # Iterations
     num_iterations = 1000
     # Optimal values for m and c
-    [c, m] = gradient_descent_runner(
-        points, initial_c, initial_m, learning_rate, num_iterations)
+    [c, m] = gradient_descent_runner(points, initial_c, initial_m, learning_rate, num_iterations)
     # Results
     error = compute_error_for_points(c, m, points)
     print("Optimized after {0} iterations: m = {1}, c = {2} and error = {3}".format(num_iterations, m, c, error))
